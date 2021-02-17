@@ -35,12 +35,14 @@ requirements:
     - r-rcpp
     - r-bigassertr >=0.1.1
     - r-data.table
+    - r-parallelly
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp
     - r-bigassertr >=0.1.1
     - r-data.table
+    - r-parallelly
 
 test:
   commands:
@@ -49,7 +51,7 @@ test:
 
 about:
   home: https://github.com/privefl/bigreadr
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Read large text files by splitting them in smaller files. Package 'bigreadr' also provides some convenient wrappers around fread() and fwrite() from package 'data.table'.
   license_family: GPL3
   license_file:
